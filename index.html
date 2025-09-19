@@ -3,102 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exclusive Offer</title>
+  <title>Dynamic Offer Button</title>
   <style>
     body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff9966, #ff5e62);
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom, #fdfdfd, #f5f5f5);
-      color: #333;
-      line-height: 1.6;
+      font-family: Arial, sans-serif;
     }
-    header {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: #0077b6;
-      color: white;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-      font-weight: 600;
-    }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.2rem;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    .container img {
-      max-width: 100%;
-      border-radius: 14px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    }
-    .content {
-      margin-top: 1.8rem;
-    }
-    .content h2 {
-      font-size: 1.9rem;
-      margin-bottom: 1rem;
-      font-weight: 600;
-      color: #222;
-    }
-    .content p {
-      font-size: 1rem;
-      margin-bottom: 1.5rem;
-      color: #555;
-    }
-    .btn {
-      display: inline-block;
-      padding: 14px 28px;
-      font-size: 1.2rem;
+
+    .cta-btn {
+      padding: 20px 40px;
+      font-size: 1.5rem;
       font-weight: bold;
       color: white;
-      background: #ff5722;
+      background: #28a745;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
       text-decoration: none;
-      border-radius: 10px;
-      transition: background 0.3s, transform 0.2s;
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
-    .btn:hover {
-      background: #e64a19;
-      transform: translateY(-2px);
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      background: #f1f1f1;
-      color: #555;
+
+    .cta-btn:hover {
+      background: #218838;
+      transform: scale(1.08);
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>✨ Special Deal Awaits You ✨</h1>
-    <p>Unlock your exclusive access today</p>
-  </header>
-
-  <div class="container">
-    <!-- Free professional Unsplash image -->
-    <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1200&q=80" alt="Offer Banner">
-
-    <div class="content">
-      <h2>Get Your Exclusive Offer Now</h2>
-      <p>
-        This is a limited-time opportunity you don’t want to miss.  
-        Take action today and enjoy the benefits of this special deal.
-      </p>
-      <a class="btn" href="https://safeoffers.pro/a/9rpLYFjNQc3pW6" target="_blank">👉 Claim Offer</a>
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2025 Exclusive Landing Page. All Rights Reserved.
-  </footer>
+  <!-- এখানে শুধু এই link ভ্যারিয়েবল বদলালেই হবে -->
+  <script>
+    const link = "https://safeoffers.pro/a/9rpLYFjNQc3pW6"; 
+    document.write(`<a href="${link}" class="cta-btn">👉 Click Here 👈</a>`);
+  </script>
 </body>
 </html>
