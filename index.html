@@ -3,43 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dynamic Offer Button</title>
+  <title>Find Your Match ❤️ | Dating Landing Page</title>
   <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: linear-gradient(135deg, #ff9966, #ff5e62);
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
     }
 
     .cta-btn {
-      padding: 20px 40px;
-      font-size: 1.5rem;
+      display: inline-block;
+      padding: 15px 35px;
+      font-size: 1.2rem;
       font-weight: bold;
       color: white;
       background: #28a745;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
+      border-radius: 30px;
       text-decoration: none;
       transition: 0.3s;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
 
     .cta-btn:hover {
       background: #218838;
       transform: scale(1.08);
     }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 60px 20px;
+      background: #fff;
+      color: #333;
+      text-align: center;
+    }
+
+    .feature-box {
+      background: #f8f9fa;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-8px);
+    }
+
+    .feature-box h3 {
+      margin-bottom: 15px;
+      color: #ff416c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(0,0,0,0.3);
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
-  <!-- এখানে শুধু এই link ভ্যারিয়েবল বদলালেই হবে -->
-  <script>
-    const link = "https://safeoffers.pro/a/9rpLYFjNQc3pW6"; 
-    document.write(`<a href="${link}" class="cta-btn">👉 Click Here 👈</a>`);
-  </script>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Find Your Perfect Match ❤️</h1>
+    <p>Join thousands of singles and start your love journey today.</p>
+    <a href="https://your-offer-link.com" class="cta-btn">💌 Get Started Now</a>
+  </header>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature-box">
+      <h3>💖 Easy Signup</h3>
+      <p>Start your journey in just a few clicks. Simple and fast registration process.</p>
+    </div>
+    <div class="feature-box">
+      <h3>🔒 100% Secure</h3>
+      <p>Your privacy is our priority. All your data is safe and protected.</p>
+    </div>
+    <div class="feature-box">
+      <h3>🌍 Global Community</h3>
+      <p>Connect with people from all around the world and expand your network.</p>
+    </div>
+    <div class="feature-box">
+      <h3>💬 Instant Chat</h3>
+      <p>Meet new people and start conversations instantly with real-time chat.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Dating Landing Page. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
